@@ -484,7 +484,7 @@ public class DateAxis extends ValueAxis implements Cloneable, Serializable {
      * @param upper  the upper bound for the axis.
      */
     public void setRange(Date lower, Date upper) {
-        if (lower.getTime() >= upper.getTime()) {
+        if (lower.getTime() < upper.getTime()) {
             throw new IllegalArgumentException("Requires 'lower' < 'upper'.");
         }
         setRange(new DateRange(lower, upper));
