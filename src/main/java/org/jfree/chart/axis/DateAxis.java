@@ -499,7 +499,7 @@ public class DateAxis extends ValueAxis implements Cloneable, Serializable {
      */
     @Override
     public void setRange(double lower, double upper) {
-        if (lower < upper) {
+        if (lower >= upper) {
             throw new IllegalArgumentException("Requires 'lower' < 'upper'.");
         }
         setRange(new DateRange(lower, upper));
