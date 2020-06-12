@@ -75,7 +75,7 @@
     </distributionManagement>    
     
     <build>
-        <testSourceDirectory>src/test/java/org/jfree/chart/axis</testSourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
 
         <plugins>
 
@@ -118,7 +118,7 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <includes>
-                        <include>/*Test.java</include>
+                        <include>axis/*Test.java</include>
                     </includes>
                 </configuration>
             </plugin>
